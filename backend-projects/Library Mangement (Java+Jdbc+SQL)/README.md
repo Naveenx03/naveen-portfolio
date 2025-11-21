@@ -23,7 +23,37 @@ This project manages Books, Members, and Issued Books through a modular DAO + Se
 - Issue a book to a member  
 - Return a book  
 - View all issued books  
-- Handles issue date and return date  
+- Handles issue date and return date
+
+# 📁 Project Structure
+
+```text
+src/
+└── com/
+    └── library/
+        ├── dao/
+        │   ├── imple/
+        |   |   └── BookDAOImpl.java
+        |   |   └── MemberDAOImpl.java
+        |   |   └── IssueDAOImpl.java
+        |   └── BookDAO.java
+        │   └── MemberDAO.java
+        |   └── IssueDAO.java
+        │
+        ├── model/
+        │   └── Book
+        |   └── IssuedBook
+        |   └── Member
+        │
+        ├── service/
+        │   └── LibraryService.java
+        │
+        ├── util/
+        │   └── DBConnection
+        │
+        └── main/
+            └── App.java
+```
 
 ## 🗄️ Database Schema (MySQL)
 
