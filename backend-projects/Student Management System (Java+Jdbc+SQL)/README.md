@@ -1,18 +1,55 @@
-## Getting Started
+# 🎓 Student Management System (Java + MySQL)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple console-based Student Management System built using Core Java, JDBC, and MySQL.  
+This project manages Students through a clean DAO + Service + Utility + Main structure.
 
-## Folder Structure
+## 🚀 Features
 
-The workspace contains two folders by default, where:
+### 🧑‍🎓 Student Management
+- Add new students  
+- View all students  
+- Update student details  
+- Delete students  
+- Auto-increment student IDs  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 📂 Additional Features
+- Modular DAO implementation  
+- Centralized utility functions  
+- Clean service layer handling business logic  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📁 Project Structure
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+src/
+└── com/
+└── student/
+├── dao/
+│ ├── StudentDAO.java
+│ └── StudentDAOImpl.java
+│
+├── model/
+│ └── Student.java
+│
+├── service/
+│ └── StudentService.java
+│
+├── util/
+│ └── Utils.java
+│
+└── main/
+└── App.java
 
-## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🗄️ Database Schema (MySQL)
+
+### Table: students
+- id (INT, PK, Auto Increment)  
+- name (VARCHAR)  
+- email (VARCHAR)  
+- course (VARCHAR)  
+- year (INT)
+
+## 🛠️ Technologies Used
+- Java (JDK 8+)  
+- MySQL 8  
+- JDBC  
+- VS Code  
