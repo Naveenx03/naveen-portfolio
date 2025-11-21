@@ -19,25 +19,25 @@ This project manages Students through a clean DAO + Service + Utility + Main str
 
 ## 📁 Project Structure
 
+```text
 src/
 └── com/
-└── student/
-├── dao/
-│ ├── StudentDAO.java
-│ └── StudentDAOImpl.java
-│
-├── model/
-│ └── Student.java
-│
-├── service/
-│ └── StudentService.java
-│
-├── util/
-│ └── Utils.java
-│
-└── main/
-└── App.java
-
+    └── student/
+        ├── dao/
+        │   ├── StudentDAO.java
+        │   └── StudentDAOImpl.java
+        │
+        ├── model/
+        │   └── Student.java
+        │
+        ├── service/
+        │   └── StudentService.java
+        │
+        ├── util/
+        │   └── Utils.java
+        │
+        └── main/
+            └── App.java
 
 ## 🗄️ Database Schema (MySQL)
 
