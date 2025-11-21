@@ -1,18 +1,49 @@
-## Getting Started
+# 🏥 Hospital Management System (Java + MySQL)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple console-based Hospital Management System built using Core Java, JDBC, and MySQL.  
+This project allows management of Patients, Doctors, and Appointments through a clean, menu-driven console interface.
 
-## Folder Structure
+## 🚀 Features
 
-The workspace contains two folders by default, where:
+### 👨‍⚕️ Doctor Management
+- Add new doctor  
+- View all doctors  
+- Auto-increment doctor IDs  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 🧑‍🦰 Patient Management
+- Add new patient  
+- View all patients  
+- Auto-increment patient IDs  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 📅 Appointment Management
+- Create appointments  
+- View all appointments  
+- Appointment linked using foreign keys to:
+  - patients  
+  - doctors  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+## 🗄️ Database Schema (MySQL)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Table: patients
+- id (INT, PK, Auto Increment)  
+- name (VARCHAR)  
+- age (INT)  
+- gender (VARCHAR)  
+
+### Table: doctors
+- id (INT, PK, Auto Increment)  
+- name (VARCHAR)  
+- specialization (VARCHAR)  
+
+### Table: appointments
+- id (INT, PK, Auto Increment)  
+- patient_id (INT, FK → patients.id)  
+- doctor_id (INT, FK → doctors.id)  
+- appointment_date (DATE)  
+
+## 🛠️ Technologies Used
+- Java (JDK 8+)  
+- MySQL 8  
+- JDBC  
+- VS Code  
