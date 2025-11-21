@@ -32,7 +32,7 @@ src/
 └── com/
     └── library/
         ├── dao/
-        │   ├── imple/
+        │   ├── impl/
         |   |   └── BookDAOImpl.java
         |   |   └── MemberDAOImpl.java
         |   |   └── IssueDAOImpl.java
