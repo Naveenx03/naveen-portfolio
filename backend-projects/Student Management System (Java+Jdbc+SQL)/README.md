@@ -38,7 +38,7 @@ src/
         │
         └── main/
             └── App.java
-
+```
 ## 🗄️ Database Schema (MySQL)
 
 ### Table: students
