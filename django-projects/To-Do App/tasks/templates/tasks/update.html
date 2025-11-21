@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>To-Do App</title>
+</head>
+<body class='d-flex align-items-center vh-100'>
+<div class='container border pb-2 pt-2  w-50 bg-success-subtle'>
+    <h2 class='text-center'>Update Task</h2>
+    <div class='d-flex justify-content-center pt-2'>
+        <div class='mx-auto'>
+    <form method='POST'>
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit" class='btn btn-primary'>Save</button>
+    </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

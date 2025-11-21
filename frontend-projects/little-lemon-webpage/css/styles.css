@@ -1,0 +1,210 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #EEEFE0;
+}
+
+#title{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 0;
+    color: black;
+    margin-bottom: 0;
+    height: 2rem;
+}
+
+#navigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    padding-bottom: 3px;
+}
+
+#nav-content{
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+header{
+    background-color: #B6F500;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 13rem;
+}
+.hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero h1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #EEEFE0;
+    z-index: 2;
+    font: small-caps bold 40px/1 sans-serif;
+}
+.hero p{
+    position: absolute;
+    font-family: Georgia, serif;
+    top: 65%;
+    color: #EEEFE0;
+    left: 2%;
+    right: 2%;
+    text-align:left;
+    z-index: 2;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.6), rgba(0,0,0, 0.3));
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.section{
+    margin-top: 1rem;
+    display: flex;
+    justify-content:center;
+    gap: 4rem;
+}
+
+#menu{
+    height: 500px;
+    width: 400px;
+    background-color: #b8f500;
+    text-align: center;
+    font-family: "Andale Mono", monospace;
+    border-radius: 1rem;
+}
+#booking{
+    height: 500px;
+    width: 400px;
+    background-color: #b8f500;
+    text-align: center;
+    font-family: "Andale Mono", monospace;
+    border-radius: 1rem;
+}
+#timing{
+    height: 500px;
+    width: 400px;
+    background-color: #b8f500;
+    text-align: center;
+    font-family: "Andale Mono", monospace;
+    border-radius: 1rem;
+}
+
+#img{
+    width: 100%;
+    height: 50%;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#heading{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#para{
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+}
+
+#time{
+    list-style-type: none;
+    margin-top: 0;
+    text-align: left;
+    font-family: "Andale Mono", monospace;
+}
+
+#link{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: none;
+    background-color: #FFFADC;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+.article1{
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.article1 p{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    padding-top: 8rem;
+ 
+}
+#burger{
+    height: 35rem;
+    border-radius: 2rem;
+}
+
+.article2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#grill{
+    height: 25rem;
+    border-radius: 2rem;
+}
+
+.article2 p{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    padding-top: 4.5rem;
+ 
+}
+
+footer{
+    margin-top: 2rem;
+    width: 100%;
+    height: 6rem;
+    background-color: #2D4F2B;
+}
+
+footer p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    padding-top: 1rem;
+}
+#footer-nav a{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+#social-links a{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+
+}

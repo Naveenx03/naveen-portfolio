@@ -1,0 +1,12 @@
+# IDE folders
+.vscode/
+.idea/
+bin/
+out/
+build/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
