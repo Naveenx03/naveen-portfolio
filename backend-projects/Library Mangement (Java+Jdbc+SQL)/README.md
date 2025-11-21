@@ -1,18 +1,52 @@
-## Getting Started
+# 📚 Library Management System (Java + MySQL)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple console-based Library Management System built using Core Java, JDBC, and MySQL.  
+This project manages Books, Members, and Issued Books through a modular DAO + Service + UI structure.
 
-## Folder Structure
+## 🚀 Features
 
-The workspace contains two folders by default, where:
+### 📘 Book Management
+- Add new books  
+- View all books  
+- Update book quantity  
+- Delete books  
+- Auto-increment book IDs  
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 🧑‍🤝‍🧑 Member Management
+- Add new members  
+- View all members  
+- Update member details  
+- Delete members  
+- Auto-increment member IDs  
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 📖 Issue Management
+- Issue a book to a member  
+- Return a book  
+- View all issued books  
+- Handles issue date and return date  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🗄️ Database Schema (MySQL)
 
-## Dependency Management
+### Table: books
+- book_id (INT, PK, Auto Increment)  
+- title (VARCHAR)  
+- author (VARCHAR)  
+- quantity (INT)  
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Table: members
+- member_id (INT, PK, Auto Increment)  
+- name (VARCHAR)  
+- email (VARCHAR)  
+
+### Table: issued_books
+- issue_id (INT, PK, Auto Increment)  
+- book_id (INT, FK → books.book_id)  
+- member_id (INT, FK → members.member_id)  
+- issue_date (DATE)  
+- return_date (DATE)  
+
+## 🛠️ Technologies Used
+- Java (JDK 8+)  
+- MySQL 8  
+- JDBC  
+- VS Code  
